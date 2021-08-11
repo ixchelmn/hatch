@@ -46,7 +46,6 @@ footer {
     background-color: #F3D8CD;
 }
 
-
 .navbar-links {
     background-color: #F1AFA9;
     /* height: 1rem; */
@@ -72,7 +71,6 @@ footer {
 
 .nav-bar-brand-container {
     justify-content: space-evenly;
-
 }
 
 .pink-button {
@@ -83,21 +81,21 @@ footer {
     font-family: 'Advent Pro Medium', sans-serif;
 }
 
-.pink-button:hover{
+.pink-button:hover {
     background-color: white;
     color: #F0637A;
 }
-
 
 .white-button {
     color: #F0637A;
     background-color: white;
     border-color: #F0637A;
     border-radius: unset;
-    font-family: 'Advent Pro Medium', sans-serif;;
+    font-family: 'Advent Pro Medium', sans-serif;
+    ;
 }
 
-.white-button:hover{
+.white-button:hover {
     background-color: #F0637A;
     color: white;
 }
@@ -129,45 +127,43 @@ footer {
     min-width: 2rem;
 }
 
-.container{
+.container {
     margin-bottom: 5em;
-    font-family: 'Advent Pro Medium', sans-serif; 
+    font-family: 'Advent Pro Medium', sans-serif;
     text-decoration: none;
 }
 
-.title-container{
+.title-container {
     /* padding-left: 2rem; */
     text-decoration: none;
 }
 
-.title-signup{
+.title-signup {
     font-family: titles !important;
     align-self: center;
     padding-top: 1rem;
     font-size: x-large;
 }
 
-.login-form{
+.login-form {
     background-color: #F1AFA9 !important;
     color: #5E2B43;
     margin-bottom: 3em;
     text-decoration: none;
-   
 }
 
-.container-register{
+.container-register {
     text-decoration: none;
-    
 }
-.text-register{
+
+.text-register {
     text-decoration: none !important;
     color: #F0637A;
     font-weight: bolder;
     font-family: 'Advent Pro Light', sans-serif;
-     
 }
 
-.text-register:hover{
+.text-register:hover {
     color: white;
 }
 
@@ -190,21 +186,121 @@ footer {
     width: 100%;
 }
 
-.normal-text{
+.normal-text {
     color: #5E2B43;
     font-family: 'Advent Pro Light', sans-serif;
 }
 
-.form-check-container{
+.form-check-container {
     padding-left: 3.5rem;
 }
 
-.form-check-input:checked{
+.form-check-input:checked {
     background-color: #F0637A !important;
     border-color: white;
 }
 
-.icon-spacing-cart{
+.icon-spacing-cart {
     margin-left: 2px;
     color: #F0637A;
+}
+
+/* /////////////////////////////////////// */
+
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+.fill-width {
+    width: 100%;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.flex-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.no-margin {
+    margin: unset;
+}
+
+.flex-center-vertical {
+    display: flex;
+    justify-content: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* //// */
+.cart-card {
+    background-color: #f3f0e8;
+    margin-bottom: 30px;
+}
+
+.cart-product-image {
+    width: 95%;
+    height: 95%;
+}
+
+.cart-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cart-text {
+    font-weight: 600;
+    color: #6c6c6c;
+}
+
+.product-row {
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.standard-height {
+    max-height: 120px;
+}
+
+.subtitle-row {
+    max-height: 30px;
+    font-weight: bold;
+}
+
+.cart-form-input {
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+.expiration-input {
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 3rem;
+}
+.truck-img {
+    width: 200px;
+    margin-left: 20%;
+}
+.card-img {
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.buy-button {
+    width: 80%;
+    height: 4rem;
+    font-size: x-large;
+    font-weight: bold;
 }

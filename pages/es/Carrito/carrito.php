@@ -1,3 +1,6 @@
+<?php
+        include("../../../top-bar.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,201 +12,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/hatch/src/img/iconoSitio-03.png" type="image/x-icon">
     <title>Hatch Atelier</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="/hatch/src/style/carrito.css">
-    <link rel="stylesheet" href="/hatch/src/style/fontawesome-free-5.15.3-web/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../src/style/carrito.css">
+    <link rel="stylesheet" href="../../../src/style/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-            <!-- Inicia codigo para la barra de navegacion -->
-            <div class="container-fluid nav-bar-brand-container">
-                <!-- contenedor del logo y su respectivo enlace asi como de todo el navbar-->
-                <a class="navbar-brand" href="/index.php">
-                    <img src="/hatch/src/img/logoHatch-02.png" alt="" width="80" height="110"
-                        class="d-inline-block align-text-center">
-                    Hatch Atelier
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
-                    <!-- contenedor enlaces centrales -->
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <!-- inicia drop down -->
-                        <li class="nav-item dropdown">
-                            <!-- primer item drop down -->
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Compra
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Compra/ropa.php">Ropa</a></li>
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Compra/stickers-posters.php">Stickers y
-                                        Posters</a></li>
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Compra/papeleria.php">Papeleria</a></li>
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Compra/accesorios.php">Accesorios</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Compra/suscribite.php">Suscribete</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Vende tus Diseños
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item"
-                                        href="/hatch/pages/es/Vende-tus-diseños/comienza-a-vender.php">¡Comienza a
-                                        Vender!</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="/hatch/pages/es/Vende-tus-diseños/como-subir-disenos.php">¿Cómo subir tus
-                                        Diseños?</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Acerca de Nosotros
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Acerca-de-Nosotros/que-es-hatch.php">¿Qué
-                                        es Hatch Atelier?</a></li>
-                                <li><a class="dropdown-item"
-                                        href="/hatch/pages/es/Vende-tus-diseños/comienza-a-vender.php">Vende tus
-                                        Diseños</a></li>
-                                <li><a class="dropdown-item"
-                                        href="/hatch/pages/es/Acerca-de-Nosotros/contactanos.php">Contáctanos</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://www.ixchelmartinez.com">Blog Ixchel
-                                        martinez</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Ayuda
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Ayuda/tutoriales-de-compra.php">Tutoriales
-                                        de Compra</a></li>
-                                <li><a class="dropdown-item" href="/hatch/pages/es/Ayuda/entregas.php">Entregas</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="/hatch/pages/es/Vende-tus-diseños/como-subir-disenos.php">¿Cómo subir tus
-                                        Diseños?</a></li>
-                                <li><a class="dropdown-item"
-                                        href="/hatch/pages/es/Acerca-de-Nosotros/contactanos.php">Contáctanos</a></li>
-                            </ul>
-                        </li>
-                    </ul> <!-- Termina dropdown -->
-                    <form class="d-flex">
-                        <!--barra de busqueda -->
-                        <input class="form-control no-border" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success no-border pink-button" type="submit">Search</button>
-                    </form>
-                </div>
-                <ul class="navbar-nav mb-2 mb-lg-0"></ul>
-                <a class="normal-link" href="/hatch/pages/es/Log-in/log-in.php">Log In</a>
-                <a href="/hatch/pages/es/Log-in/registrate.php" button class="btn btn-outline-success no-border pink-button"
-                    type="submit">Registrate</button></a>
-                <a href="/hatch/pages/es/Carrito/carrito.php" title="cart-icon"><i
-                        class="fas fa-shopping-cart icon-spacing-cart"></i></i></a>
-            </div>
-        </nav>
-        <div class="container flex-center flex-center-horizontal">
-            <div class="row">
-                <div class="col-md-4 offset-md-4">
-                    <div class="login-form bg-light mt-4 p-2">
-                        <form action="" method="" class="row g-3">
-                            <div class="title-container">
-                                <h4 class="title-signup">¡Unete a Hatch Atelier!</h4>
-                                <div class="form-check flex form-check-container">
-                                    <br><img src="/hatch/src/style/fontawesome-free-5.15.3-web/svgs/solid/paint-brush.svg"
-                                        alt="Redes Sociales" style="width:20px; height: 20px;">
-                                    <input class="form-check-input" type="checkbox" id="artist">
-                                    <label class="form-check-label" for="rememberMe"> Registrarse como
-                                        Artista</label><br>
-                                    <img src="/hatch/src/style/fontawesome-free-5.15.3-web/svgs/solid/shopping-cart.svg"
-                                        alt="Redes Sociales" style="width:20px; height: 20px;">
-                                    <input class="form-check-input" type="checkbox" id="artist">
-                                    <label class="form-check-label" for="rememberMe"> Registrarse como Cliente</label>
+
+        <form action="" method="">
+            <div class="container cart-text">
+                <div class="row flex-center">
+                    <div class="flex-center flex-column card cart-card col-lg-8 col-md-10 col-sm-12">
+                        <h4 class="cart-title">Tu Carrito:</h4>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 subtitle-row flex-center">Producto</div>
+                                <div class="col-3 subtitle-row flex-center">Cantidad</div>
+                                <div class="col-3 subtitle-row flex-center">Precio</div>
+
+                                <!-- loopear items -->
+                                <div class="row standard-height product-row">
+                                    <div class="col-6 standard-height">
+                                        <div class="row standard-height">
+                                            <div class="col-4 standard-height flex-center">
+                                                <img class="cart-product-image" src="https://i.ebayimg.com/images/g/55wAAOSwa~BYdcby/s-l500.jpg" />
+                                            </div>
+                                            <div class="col-8 flex-column flex-center-horizontal">
+                                                <span>NOMBRE PRODUCTO</span>
+                                                <span>Tamaño: XL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 flex-center standard-height">
+                                        <div>
+                                            <button type="button" class="btn btn-outline-secondary">-</button>
+                                            <span>1</span>
+                                            <button type="button" class="btn btn-outline-secondary">+</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-3 flex-center flex-space-evenly standard-height">
+                                        <h4>90$</h4>
+                                        <button type="button" class="btn btn-outline-secondary rounded">x</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-center flex-column card cart-card col-lg-8 col-md-10 col-sm-12">
+                        <h4 class="cart-title">Datos de Envio:</h4>
+
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-6">
+                                    <span>Direccion</span>
+                                    <textarea class="fill-width" required></textarea>
+
+                                    <img class="truck-img" src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/007/508/original/truck.png" />
+                                </div>
+
+                                <div class="col-6 flex-column flex-space-evenly">
+                                    <div>
+                                        <span>Telefono</span>
+                                        <input type="number" name="telefono" class="fill-width cart-form-input" required></input>
+                                    </div>
+                                    <div>
+                                        <span>Ciudad</span>
+                                        <input type="text" name="ciudad" class="fill-width cart-form-input" required></input>
+                                    </div>
+                                    <div>
+                                        <span>Departamento</span>
+                                        <select name="departamento" class="fill-width cart-form-input">
+                                            <option value="Atlantida">Atlantida</option>
+                                            <option value="Colon">Colon</option>
+                                            <option value="Comayagua">Comayagua</option>
+                                            <option value="Copan">Copan</option>
+                                            <option value="Cortes">Cortes</option>
+                                            <option value="Choluteca">Choluteca</option>
+                                            <option value="El Paraiso">El Paraiso</option>
+                                            <option value="Francisco Morazan">Francisco Morazan</option>
+                                            <option value="Gracias a Dios">Gracias a Dios</option>
+                                            <option value="Intibuca">Intibuca</option>
+                                            <option value="Islas de la Bahia">Islas de la Bahia</option>
+                                            <option value="La Paz">La Paz</option>
+                                            <option value="Lempira">Lempira</option>
+                                            <option value="Ocotepeque">Ocotepeque</option>
+                                            <option value="Olancho">Olancho</option>
+                                            <option value="Santa Barbara">Santa Barbara</option>
+                                            <option value="Valle">Valle</option>
+                                            <option value="Yoro">Yoro</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-center flex-column card cart-card col-lg-8 col-md-10 col-sm-12">
+                        <h4 class="cart-title">Datos de Pago:</h4>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span>Numero de tarjeta</span>
+                                    <input class="fill-width" type="number" required></input>
                                 </div>
                             </div>
 
-                            <span>¿Ya tienes cuenta?<a class="text-register" href="/hatch/pages/es/Log-in/log-in.php"> Inicia
-                                    Sesion</a></span>
-                            <div class="col-12">
-                                <label>Correo Electrónico:</label>
-                                <input type="text" name="email" class="form-control" placeholder="correo electrónico">
-                            </div>
-                            <div class="col-12">
-                                <label>Usuario</label>
-                                <input type="password" name="Usuario" class="form-control" placeholder="usuario">
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe">
-                                    <label class="form-check-label" for="rememberMe"> Recúerdame</label>
+                            <div class="row">
+                                <div class="col-6 flex-column flex-space-evenly">
+                                    <img class="card-img" src="https://cdn.icon-icons.com/icons2/2819/PNG/512/credit_card_cards_icon_179543.png" />
+                                </div>
+                                <div class="col-6 flex-column flex-space-evenly">
+                                    <div>
+                                        <span>CVV</span>
+                                        <input type="number" name="telefono" class="fill-width cart-form-input" required></input>
+                                    </div>
+                                    <div>
+                                        <div class="fill-width">
+                                            <span class="fill-width">Expiracion</span>
+                                        </div>
+                                        <input min="1" type="number" name="year" class="expiration-input" required></input>
+                                        /
+                                        <input min="21" type="number" name="year" class="expiration-input" required></input>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 flex-center">
-                                <button type="submit" class="btn pink-button">Registrarse</button>
-                            </div>
-                        </form>
+
+
+                        </div>
                     </div>
+
+                    <button class="no-border pink-button buy-button">
+                        Comprar
+                    </button>
                 </div>
             </div>
-        </div>
+        </form>
 
         <footer>
-            <div style="background-color: rgba(240,99,122,255); width: 100%;">
-                <!--contenedor principal-->
-                <div style="background-color: #f1afa9; width: 100%; display: flex; justify-content: space-evenly;">
-                    <nav>
-                        <a href="https://www.linkedin.com/in/ixchel-martinez-788b071bb/@gmail.com"
-                            style="text-decoration: none;"><img
-                                src="/hatch/src/style/fontawesome-free-5.15.3-web/svgs/brands/linkedin-in.svg"
-                                alt="Redes Sociales" style="width:20px; height: 20px;"> </a>
-                        <a href="https://www.facebook.com/Hatch-Atelier-319841905408913"
-                            style="text-decoration: none;"><img
-                                src="/hatch/src/style/fontawesome-free-5.15.3-web/svgs/brands/facebook-f.svg"
-                                alt="Redes Sociales" style="width:20px; height: 20px;"> </a>
-                        <a href="https://www.instagram.com/ixchelmn/?hl=en" style="text-decoration: none;"><img
-                                src="/hatch/src/style/fontawesome-free-5.15.3-web/svgs/brands/instagram-square.svg"
-                                alt="Redes Sociales" style="width:20px; height: 20px;">
-                        </a>
-                    </nav>
-                </div>
-                <div class="audio-controls flex-center">
-                    <p class="normal-text">Creado por: Ixchel V. Martinez N.</p>
-                    <audio controls>
-                        <source src="/hatch/src/audio/jpn - bloom. [].mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+                <!-- Inicia codigo para la barra de navegacion -->
+                <div class="container-fluid nav-bar-brand-container">
+                    <!-- contenedor del logo y su respectivo enlace asi como de todo el navbar-->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../../../src/img/Asset 1.svg" alt="" width="80" height="110" class="d-inline-block align-text-center">
+                        Hatch Atelier
+                    </a>
 
-            </div>
-            </div>
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
+                            <!-- contenedor enlaces centrales -->
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <!-- inicia drop down -->
+                                <li class="nav-item dropdown">
+                                    <!-- primer item drop down -->
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Compra
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/pages/es/Compra/ropa.html">Ropa</a></li>
+                                        <li><a class="dropdown-item" href="/pages/es/Compra/stickers-posters.html">Stickers
+                                                y Posters</a></li>
+                                        <li><a class="dropdown-item" href="/pages/es/Compra/papeleria.html">Papeleria</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/pages/es/Compra/accesorios.html">Accesorios</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="/pages/es/Compra/suscribite.html">Suscribite</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Vende tus Diseños
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/comienza-a-vender.html">¡Comienza
+                                                a
+                                                Vender!</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/como-subir-disenos.html">¿Cómo
+                                                subir tus
+                                                Diseños?</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Acerca de Nosotros
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/pages/es/Acerca-de-Nosotros/que-es-hatch.html">¿Qué es Hatch
+                                                Atelier?</a></li>
+                                        <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/comienza-a-vender.html">Vende tus
+                                                Diseños</a></li>
+                                        <li><a class="dropdown-item" href="/pages/es/Acerca-de-Nosotros/contactanos.html">Contáctanos</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="https://www.ixchelmartinez.com">Blog
+                                                Ixchel
+                                                martinez</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ayuda
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="/pages/es/Ayuda/tutoriales-de-compra.html">Tutoriales de
+                                                Compra</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/pages/es/Ayuda/entregas.html">Entregas</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/como-subir-disenos.html">¿Cómo
+                                                subir tus
+                                                Diseños?</a></li>
+                                        <li><a class="dropdown-item" href="/pages/es/Acerca-de-Nosotros/contactanos.html">Contáctanos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul> <!-- Termina dropdown -->
+                        </div>
+                    </div>
 
+                    <div class="collapse navbar-collapse normal-link" id="navbarSupportedContent">
+                        <!-- contenedor de log in / Registrate -->
+                        <ul class="navbar-nav mb-2 mb-lg-0"></ul>
+                        <a class="normal-link" href="/pages/es/Log-in/log-in.html">Log In</a>
+                        <a href="/pages/es/Log-in/registrate.html" button class="btn btn-outline-success no-border pink-button" type="submit">Registrate</button></a>
+                        <a href="/pages/es/Carrito/carrito.html" title="cart-icon"><i class="fas fa-shopping-cart icon-spacing-cart px-2"></i></i></a>
+
+                    </div>
+                </div>
+            </nav>
+            <div style="background-color: #F3F0E8; width: 100%; display: flex; justify-content: space-evenly;">
+                <nav>
+                    <a href="https://www.linkedin.com/in/ixchel-martinez-788b071bb/@gmail.com" style="text-decoration: none;"><img src="../../../src/style/fontawesome-free-5.15.3-web/svgs/brands/linkedin-in.svg" alt="Redes Sociales" style="width:20px; height: 20px;"> </a>
+                    <a href="https://www.facebook.com/Hatch-Atelier-319841905408913" style="text-decoration: none;"><img src="../../../src/style/fontawesome-free-5.15.3-web/svgs/brands/facebook-f.svg" alt="Redes Sociales" style="width:20px; height: 20px;"> </a>
+                    <a href="https://www.instagram.com/ixchelmn/?hl=en" style="text-decoration: none;"><img src="../../../src/style/fontawesome-free-5.15.3-web/svgs/brands/instagram-square.svg" alt="Redes Sociales" style="width:20px; height: 20px;">
+                    </a>
+                </nav>
+            </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>

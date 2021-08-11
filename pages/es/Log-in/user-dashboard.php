@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<?php
+include("../../../top-bar.php");
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,125 +36,25 @@
         }
     </script>
 
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: log-in.php");
-    exit;
-}
-?>
+    <?php
+    // Initialize the session
+    // if(session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) {    session_start();
+
+    // 
+
+    // Check if the user is logged in, if not then redirect him to login page
+    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+        header("location: log-in.php");
+        exit;
+    }
+    ?>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-            <!-- Inicia codigo para la barra de navegacion -->
-            <div class="container-fluid nav-bar-brand-container">
-                <!-- contenedor del logo y su respectivo enlace asi como de todo el navbar-->
-                <a class="navbar-brand" href="index.html">
-                    <img src="../../../src/img/logoHatch-02.png" alt="" width="80" height="110" class="d-inline-block align-text-center">
-                    Hatch Atelier
-                </a>
 
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
-                        <!-- contenedor enlaces centrales -->
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <!-- inicia drop down -->
-                            <li class="nav-item dropdown">
-                                <!-- primer item drop down -->
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Compra
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/pages/es/Compra/ropa.html">Ropa</a></li>
-                                    <li><a class="dropdown-item" href="/pages/es/Compra/stickers-posters.html">Stickers
-                                            y Posters</a></li>
-                                    <li><a class="dropdown-item" href="/pages/es/Compra/papeleria.html">Papeleria</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="/pages/es/Compra/accesorios.html">Accesorios</a>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/pages/es/Compra/suscribite.html">Suscribite</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Vende tus Diseños
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/comienza-a-vender.html">¡Comienza a
-                                            Vender!</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/como-subir-disenos.html">¿Cómo subir tus
-                                            Diseños?</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Acerca de Nosotros
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/pages/es/Acerca-de-Nosotros/que-es-hatch.html">¿Qué es Hatch
-                                            Atelier?</a></li>
-                                    <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/comienza-a-vender.html">Vende tus
-                                            Diseños</a></li>
-                                    <li><a class="dropdown-item" href="/pages/es/Acerca-de-Nosotros/contactanos.html">Contáctanos</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="https://www.ixchelmartinez.com">Blog
-                                            Ixchel
-                                            martinez</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ayuda
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/pages/es/Ayuda/tutoriales-de-compra.html">Tutoriales de Compra</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="/pages/es/Ayuda/entregas.html">Entregas</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/pages/es/Vende-tus-diseños/como-subir-disenos.html">¿Cómo subir tus
-                                            Diseños?</a></li>
-                                    <li><a class="dropdown-item" href="/pages/es/Acerca-de-Nosotros/contactanos.html">Contáctanos</a></li>
-                                </ul>
-                            </li>
-                        </ul> <!-- Termina dropdown -->
-                        <form class="d-flex">
-                            <!--barra de busqueda -->
-                            <input class="form-control no-border" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success no-border pink-button" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
 
-                <div class="collapse navbar-collapse normal-link" id="navbarSupportedContent">
-                    <!-- contenedor de log in / Registrate -->
-                    <ul class="navbar-nav mb-2 mb-lg-0"></ul>
-                    <a class="normal-link" href="../Log-in/log-in.php">Log In</a>
-                    <a href="../Log-in/registrate.php" button class="btn btn-outline-success no-border pink-button" type="submit">Registrate</button></a>
-                    <a href="/pages/es/Carrito/carrito.html" title="cart-icon"><i class="fas fa-shopping-cart icon-spacing-cart px-2"></i></i></a>
-
-                </div>
-            </div>
-        </nav>
 
         <form action="" method="">
             <div class="container cart-text">
@@ -163,7 +68,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                                     <img class="user-avatar" id="output_image" src="https://www.pngarts.com/files/3/Avatar-PNG-High-Quality-Image.png" alt="imagen de perfil" />
                                 </div>
                                 <div class="col-6 flex-column flex-space-evenly">
-                                    <input class="profile-file-input" accept="image/*" type='file' id="imgInp" onchange="preview_image(event)" />
+                                    <!-- <input class="profile-file-input" accept="image/*" type='file' id="imgInp" onchange="preview_image(event)" /> -->
 
                                     <div>
                                         <span>Nombre</span>
@@ -177,6 +82,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                                     <button type="button" class="btn pink-button profile-submit">Actualizar</button>
                                     <button type="button" class="btn pink-button profile-submit">Cambio de Contraseña</button>
+                                    <button type="button" class="btn pink-button profile-submit">Eliminar Perfil</button>
                                     <a href="cerrar-sesion.php" class="btn pink-button profile-submit">Cerrar Sesión</a>
                                 </div>
                             </div>
