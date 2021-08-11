@@ -318,3 +318,9 @@ footer {
     margin-left: 2px;
     color: #F0637A;
 }
+
+.nombre-producto {
+    font-size: x-large;
+    font-weight: 600;
+    color: #5E2B43;
+}

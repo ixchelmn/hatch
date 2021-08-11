@@ -126,7 +126,7 @@ if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_
                 <a href="/hatch/pages/es/Log-in/registrate.php" button class="btn btn-outline-success no-border pink-button" type="submit">Registrate</button></a>
             <?php } ?>
 
-
+            <a href="/hatch/pages/es/Log-in/user-dashboard.php" title="fa-user"><i class="fa fa-user icon-spacing-cart px-2" aria-hidden="true"></i></i></a>
 
             <a href="/hatch/pages/es/Carrito/carrito.php" title="cart-icon"><i class="fas fa-shopping-cart icon-spacing-cart px-2"></i></i></a>
 

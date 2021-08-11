@@ -2,6 +2,19 @@
 <html lang="en">
 
 <?php
+    // Initialize the session
+    // if(session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) {    session_start();
+
+    // 
+
+    // Check if the user is logged in, if not then redirect him to login page
+    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+        header("location: log-in.php");
+        exit;
+    }
+    ?>
+
+<?php
 include("../../../top-bar.php");
 ?>
 
@@ -36,18 +49,7 @@ include("../../../top-bar.php");
         }
     </script>
 
-    <?php
-    // Initialize the session
-    // if(session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) {    session_start();
-
-    // 
-
-    // Check if the user is logged in, if not then redirect him to login page
-    if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-        header("location: log-in.php");
-        exit;
-    }
-    ?>
+    
 
 </head>
 
